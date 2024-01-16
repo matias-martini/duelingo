@@ -1,6 +1,3 @@
-````
-```
-
 using UnityEngine;
 
 public class CombatEntity : MonoBehaviour
@@ -37,9 +34,6 @@ public class CombatEntity : MonoBehaviour
         // Handle death, such as disabling the GameObject or triggering death animations
         Debug.Log(gameObject.name + " has died.");
 
-   
+
     }
 }
-
-```
-````

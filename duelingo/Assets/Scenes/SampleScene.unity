@@ -645,7 +645,7 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   speed: 5
   sprintSpeed: 10
-  jumpForce: 8
+  jumpForce: 10
   rotationSpeed: 2
 --- !u!1 &955548135
 GameObject:
@@ -1372,7 +1372,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1888232915}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11256104, y: 0.6529456, z: -0.098995075, w: 0.7424231}
+  m_LocalRotation: {x: 0.11256105, y: 0.6529455, z: -0.09899506, w: 0.74242324}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

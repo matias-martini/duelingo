@@ -24,12 +24,12 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             isSprinting = true;
-            
+
         }
         else if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             isSprinting = false;
-            
+
         }
 
         // Movement
@@ -85,7 +85,7 @@ public class PlayerController : MonoBehaviour
     {
         // Update Animator parameters
         animator.SetFloat("Speed", movementMagnitude);
-        animator.SetBool("IsSprinting", isSprinting);
+        animator.SetBool("IsSprinting", isSprinting && characterController.isGrounded);
         animator.SetBool("IsJumping", !characterController.isGrounded);
     }
 
