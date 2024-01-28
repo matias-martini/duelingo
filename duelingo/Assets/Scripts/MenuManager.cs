@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using TMPro;
 
 public class MenuManager : MonoBehaviour
@@ -8,11 +7,11 @@ public class MenuManager : MonoBehaviour
     [SerializeField] private GameObject _mainLayout;
     [SerializeField] private GameObject _playLayout;
     [SerializeField] private GameObject _multiplayerServerSelectLayout;
+    [SerializeField] private GameObject _multiplayerRoomCreationLayout;
     [SerializeField] private GameObject _multiplayerConnectingLayout;
     [SerializeField] private GameObject _multiplayerConnectedLayout;
 
     [SerializeField] private GameObject _multiplayerClient;
-
 
     public void Start()
     {
@@ -26,6 +25,7 @@ public class MenuManager : MonoBehaviour
         _multiplayerServerSelectLayout.SetActive(false);
         _multiplayerConnectingLayout.SetActive(false);
         _multiplayerConnectedLayout.SetActive(false);
+        _multiplayerRoomCreationLayout.SetActive(false);
         _mainLayout.SetActive(true);
         _playLayout.SetActive(true);
     }
@@ -40,6 +40,11 @@ public class MenuManager : MonoBehaviour
     {
         SetAllLayoutsInactive();
         _multiplayerServerSelectLayout.SetActive(true);
+    }
+    public void OnMultiplayerRoomCreationButtonClicked()
+    {
+        SetAllLayoutsInactive();
+        _multiplayerRoomCreationLayout.SetActive(true);
     }
 
     public void OnMultiplayerServerSelectBackButtonClicked()
@@ -75,5 +80,6 @@ public class MenuManager : MonoBehaviour
         _multiplayerServerSelectLayout.SetActive(false);
         _multiplayerConnectingLayout.SetActive(false);
         _multiplayerConnectedLayout.SetActive(false);
+        _multiplayerRoomCreationLayout.SetActive(false);
     }
 }
