@@ -13,7 +13,7 @@ public class MyNetworkManager : NetworkManager
         Debug.Log("Running in headless mode");
         base.Start();
 
-        // StartServer();
+        StartServer();
     }
     public override void OnStartServer()
     {

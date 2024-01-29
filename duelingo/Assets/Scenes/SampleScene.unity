@@ -2269,6 +2269,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 2Hand-Axe
       objectReference: {fileID: 0}
+    - target: {fileID: 100050, guid: b0e62aeaf3f3dad478cecbf0e51dba97, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: b0e62aeaf3f3dad478cecbf0e51dba97, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.5

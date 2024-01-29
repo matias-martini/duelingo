@@ -57,13 +57,12 @@ public class PlayerController : MonoBehaviour
 
         Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
         Vector3 moveDirection = transform.TransformDirection(direction) * (isSprinting ? sprintSpeed : speed);
-        print(isSprinting);
 
         if (Input.GetButtonDown("Jump"))
         {
             if (characterController.isGrounded)
             {
-                
+
                 ySpeed = jumpForce;
                 animator.SetTrigger("Jump");
                 animator.SetBool("IsJumping", true);
@@ -140,5 +139,32 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(1.0f);
         isAttacking=false;
+    }
+
+
+
+    //Placeholder functions for Animation events.
+    public void Hit()
+    {
+    }
+
+    public void Shoot()
+    {
+    }
+    public void WeaponSwitch()
+    {
+        Axe.SetActive(Axe.activeSelf ? false : true);
+    }
+
+    public void FootR()
+    {
+    }
+
+    public void FootL()
+    {
+    }
+
+    public void Land()
+    {
     }
 }
